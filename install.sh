@@ -1,5 +1,4 @@
 
-
 echo "clean tmux config"
 rm -rf $HOME/.tmux/
 rm -f $HOME/.tmux*
@@ -13,13 +12,15 @@ rm -f $HOME/.vimrc
 
 echo "install tmux config"
 git clone --depth=1 https://github.com/zhiqizhiqi/vimrc.git ~/.vim_runtime
-sh ~/.vim_runtime/install_awesome_vimrc.sh
+sh $HOME/.vim_runtime/install_awesome_vimrc.sh
 
 echo "clean broot"
-rm -rf ~/.config/broot/
+rm -rf $HOME/.config/broot/
+rm -rf $HOME/bin/broot*
 
 echo "install broot"
-curl -o broot -L https://dystroy.org/broot/download/x86_64-linux/broot
+mkdir -p $HOME/bin
+curl -o $HOME/bin/broot -L https://dystroy.org/broot/download/x86_64-linux/broot
 
 echo "clean zsh config"
 rm -rf $HOME/.oh-my-zsh/
