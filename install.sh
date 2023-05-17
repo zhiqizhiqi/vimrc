@@ -20,7 +20,7 @@ rm -rf $HOME/bin/broot*
 
 echo "install broot"
 mkdir -p $HOME/bin
-curl -o $HOME/bin/broot -L https://dystroy.org/broot/download/x86_64-linux/broot
+curl -o $HOME/bin/broot -L https://dystroy.org/broot/download/x86_64-unknown-linux-gnu/broot
 chmod a+x $HOME/bin/broot
 
 echo "clean zsh config"
