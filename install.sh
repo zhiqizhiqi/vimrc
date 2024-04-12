@@ -1,3 +1,4 @@
+echo "export TERM=xterm-256color" >> ~/.bashrc
 
 echo "clean tmux config"
 rm -rf $HOME/.tmux/
